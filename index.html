@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Frontier Labs - FULL S.T.E.A.M. AHEAD!</title>
+    <meta
+      name="title"
+      content="Frontier Labs -
+  FULL S.T.E.A.M. AHEAD!"
+    />
+    <meta
+      name="description"
+      content="Where traditional education ends - programming, electronics, and robotics through interactive experiences!"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://frontier.absurd.industries/" />
+    <meta
+      property="og:title"
+      content="Frontier Labs -
+  FULL S.T.E.A.M. AHEAD!"
+    />
+    <meta
+      property="og:description"
+      content="Where traditional education ends - programming, electronics, and robotics through interactive experiences!"
+    />
+    <meta
+      property="og:image"
+      content="https://frontier.absurd.industries/images/screenshot.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://frontier.absurd.industries/"
+    />
+    <meta
+      property="twitter:title"
+      content="Frontier Labs -
+  FULL S.T.E.A.M. AHEAD!"
+    />
+    <meta
+      property="twitter:description"
+      content="Where traditional education ends - programming, electronics, and robotics through interactive experiences!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://frontier.absurd.industries/images/screenshot.png"
+    />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://frontier.absurd.industries/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://frontier.absurd.industries/favicon.svg"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://frontier.absurd.industries/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://frontier.absurd.industries/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="S.T.E.A.M." />
+    <link
+      rel="manifest"
+      href="https://frontier.absurd.industries/site.webmanifest"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              kepler: {
+                50: "#fef8f3",
+                100: "#fdf2e7",
+                200: "#fce4cf",
+                300: "#f8c99e",
+                400: "#f5ae6e",
+                500: "#ee780d",
+                600: "#ca660b",
+                700: "#a75409",
+                800: "#773c07",
+                900: "#5f3005",
+                950: "#301803",
+              },
+              teal: {
+                50: "#f2f9fa",
+                100: "#e6f4f4",
+                200: "#cce9e9",
+                300: "#99d3d3",
+                400: "#4db1b3",
+                500: "#009092",
+                600: "#008283",
+                700: "#006c6e",
+                800: "#005658",
+                900: "#004142",
+                950: "#000",
+              },
+            },
+            fontFamily: {
+              mono: ['"Space Mono"', "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      * {
+        font-family: "Space Mono", monospace;
+      }
+
+      /* Earth Mode - Absurd.industries: White + Orange */
+      :root {
+        --bg-primary: #ffffff;
+        --bg-secondary: #fffaf3;
+        --text-primary: #4b3105;
+        --text-secondary: #97620a;
+        --accent: #fba311;
+      }
+
+      /* Kepler Mode - Ampere.works: Black + Teal */
+      .dark {
+        --bg-primary: #0f0f0f;
+        --bg-secondary: #1a1a1a;
+        --text-primary: #f9fcfc;
+        --text-secondary: #e6f5f3;
+        --accent: #80cbc4;
+      }
+
+      @keyframes flicker {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        33% {
+          opacity: 0.9;
+        }
+        66% {
+          opacity: 0.95;
+        }
+      }
+
+      .flicker {
+        animation: flicker 5s infinite;
+      }
+
+      .fence-border {
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0V20M0 10H20' stroke='%23fba311' stroke-width='0.5'/%3E%3C/svg%3E");
+        background-size: 20px 20px;
+      }
+
+      .dark .fence-border {
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0V20M0 10H20' stroke='%2380cbc4' stroke-width='0.5'/%3E%3C/svg%3E");
+      }
+
+      .hover-glitch:hover {
+        text-shadow: 0.05em 0 0 rgba(251, 163, 17, 0.75),
+          -0.025em -0.05em 0 rgba(251, 163, 17, 0.5),
+          0.025em 0.05em 0 rgba(251, 163, 17, 0.25);
+        animation: glitch 500ms infinite;
+      }
+
+      .dark .hover-glitch:hover {
+        text-shadow: 0.05em 0 0 rgba(128, 203, 196, 0.75),
+          -0.025em -0.05em 0 rgba(128, 203, 196, 0.5),
+          0.025em 0.05em 0 rgba(128, 203, 196, 0.25);
+        animation: glitch-dark 500ms infinite;
+      }
+
+      @keyframes glitch {
+        0% {
+          text-shadow: 0.05em 0 0 rgba(251, 163, 17, 0.75),
+            -0.025em -0.05em 0 rgba(251, 163, 17, 0.5),
+            0.025em 0.05em 0 rgba(251, 163, 17, 0.25);
+        }
+        14% {
+          text-shadow: 0.05em 0 0 rgba(251, 163, 17, 0.75),
+            -0.025em -0.05em 0 rgba(251, 163, 17, 0.5),
+            0.025em 0.05em 0 rgba(251, 163, 17, 0.25);
+        }
+        15% {
+          text-shadow: -0.05em -0.025em 0 rgba(251, 163, 17, 0.75),
+            0.025em 0.025em 0 rgba(251, 163, 17, 0.5),
+            -0.05em -0.05em 0 rgba(251, 163, 17, 0.25);
+        }
+        49% {
+          text-shadow: -0.05em -0.025em 0 rgba(251, 163, 17, 0.75),
+            0.025em 0.025em 0 rgba(251, 163, 17, 0.5),
+            -0.05em -0.05em 0 rgba(251, 163, 17, 0.25);
+        }
+        50% {
+          text-shadow: 0.025em 0.05em 0 rgba(251, 163, 17, 0.75),
+            0.05em 0 0 rgba(251, 163, 17, 0.5),
+            0 -0.05em 0 rgba(251, 163, 17, 0.25);
+        }
+        99% {
+          text-shadow: 0.025em 0.05em 0 rgba(251, 163, 17, 0.75),
+            0.05em 0 0 rgba(251, 163, 17, 0.5),
+            0 -0.05em 0 rgba(251, 163, 17, 0.25);
+        }
+        100% {
+          text-shadow: -0.025em 0 0 rgba(251, 163, 17, 0.75),
+            -0.025em -0.025em 0 rgba(251, 163, 17, 0.5),
+            -0.025em -0.05em 0 rgba(251, 163, 17, 0.25);
+        }
+      }
+
+      @keyframes glitch-dark {
+        0% {
+          text-shadow: 0.05em 0 0 rgba(128, 203, 196, 0.75),
+            -0.025em -0.05em 0 rgba(128, 203, 196, 0.5),
+            0.025em 0.05em 0 rgba(128, 203, 196, 0.25);
+        }
+        14% {
+          text-shadow: 0.05em 0 0 rgba(128, 203, 196, 0.75),
+            -0.025em -0.05em 0 rgba(128, 203, 196, 0.5),
+            0.025em 0.05em 0 rgba(128, 203, 196, 0.25);
+        }
+        15% {
+          text-shadow: -0.05em -0.025em 0 rgba(128, 203, 196, 0.75),
+            0.025em 0.025em 0 rgba(128, 203, 196, 0.5),
+            -0.05em -0.05em 0 rgba(128, 203, 196, 0.25);
+        }
+        49% {
+          text-shadow: -0.05em -0.025em 0 rgba(128, 203, 196, 0.75),
+            0.025em 0.025em 0 rgba(128, 203, 196, 0.5),
+            -0.05em -0.05em 0 rgba(128, 203, 196, 0.25);
+        }
+        50% {
+          text-shadow: 0.025em 0.05em 0 rgba(128, 203, 196, 0.75),
+            0.05em 0 0 rgba(128, 203, 196, 0.5),
+            0 -0.05em 0 rgba(128, 203, 196, 0.25);
+        }
+        99% {
+          text-shadow: 0.025em 0.05em 0 rgba(128, 203, 196, 0.75),
+            0.05em 0 0 rgba(128, 203, 196, 0.5),
+            0 -0.05em 0 rgba(128, 203, 196, 0.25);
+        }
+        100% {
+          text-shadow: -0.025em 0 0 rgba(128, 203, 196, 0.75),
+            -0.025em -0.025em 0 rgba(128, 203, 196, 0.5),
+            -0.025em -0.05em 0 rgba(128, 203, 196, 0.25);
+        }
+      }
+
+      /* Picket Fence */
+      .picket-fence {
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='20' viewBox='0 0 24 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 0V20M6 0V20M10 0V20M14 0V20M18 0V20M22 0V20M0 10H24' stroke='white' stroke-width='1'/%3E%3C/svg%3E");
+        background-size: 24px 20px;
+        background-repeat: repeat-x;
+        height: 20px;
+        width: 100%;
+      }
+
+      /* Workshop Cards */
+      .workshop-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px -5px rgba(251, 163, 17, 0.25);
+      }
+
+      .dark .workshop-card:hover {
+        box-shadow: 0 10px 25px -5px rgba(128, 203, 196, 0.25);
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-white dark:bg-teal-950 text-teal-950 dark:text-white transition-colors duration-300"
+  >
+    <!-- Theme Toggle Button (Fixed) -->
+    <div class="fixed top-5 right-5 z-50">
+      <button
+        id="theme-toggle"
+        class="w-12 h-12 rounded-full bg-kepler-500 dark:bg-teal-500 text-white flex items-center justify-center shadow-lg"
+      >
+        <i class="fas fa-sun dark:hidden"></i>
+        <i class="fas fa-moon hidden dark:inline"></i>
+      </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen relative overflow-hidden">
+      <!-- Background pattern -->
+      <video
+        src="videos/robotic-walker.mp4"
+        class="w-100 absolute z-4 hidden"
+        autoplay
+        muted
+      ></video>
+      <div
+        class="absolute inset-0 bg-kepler-50 dark:bg-teal-950 fence-border opacity-40 z-5"
+      ></div>
+
+      <div class="container mx-auto px-4 py-16 relative z-10">
+        <div
+          class="flex flex-col items-center justify-center text-center mb-16"
+        >
+          <div class="inline-block mb-6 relative">
+            <span
+              class="text-kepler-500 dark:text-teal-400 text-sm uppercase tracking-widest font-bold"
+              >Where traditional education ends</span
+            >
+          </div>
+          <h1 class="text-6xl md:text-8xl font-bold mb-6 hover-glitch">
+            FRONTIER LABS
+          </h1>
+          <p
+            class="text-xl md:text-2xl font-bold text-kepler-600 dark:text-teal-50 mb-8 flicker"
+          >
+            FULL S.T.E.A.M. AHEAD!
+          </p>
+          <p class="max-w-2xl text-kepler-700 dark:text-teal-100 mb-12">
+            Programming, electronics, and robotics through interactive
+            experiences!
+          </p>
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a
+              href="#workshops"
+              class="px-8 py-4 bg-kepler-500 dark:bg-teal-500 text-white font-bold rounded-none hover:bg-kepler-600 dark:hover:bg-teal-600 transition-colors"
+            >
+              EXPLORE WORKSHOPS
+            </a>
+            <a
+              href="#contact"
+              class="px-8 py-4 border-2 border-kepler-500 dark:border-teal-500 text-kepler-500 dark:text-teal-500 font-bold rounded-none hover:bg-kepler-500 hover:text-white dark:hover:bg-teal-500 dark:hover:text-white transition-colors"
+            >
+              CONTACT US
+            </a>
+          </div>
+        </div>
+
+        <!-- Feature cards with FontAwesome icons -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto"
+        >
+          <div
+            class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-6 transform transition-all hover:translate-x-2 hover:-translate-y-2 hover:shadow-[-8px_8px_0_0_rgba(251,163,17,0.5)] dark:hover:shadow-[-8px_8px_0_0_rgba(128,203,196,0.5)]"
+          >
+            <div class="flex items-center mb-3">
+              <i
+                class="fas fa-flask text-2xl text-kepler-500 dark:text-teal-400 mr-3"
+              ></i>
+              <h3 class="text-lg font-bold text-kepler-500 dark:text-teal-50">
+                SCIENCE
+              </h3>
+            </div>
+            <p class="text-kepler-700 dark:text-white">
+              Material properties, physics, and chemistry through interactive
+              demos
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-6 transform transition-all hover:translate-x-2 hover:-translate-y-2 hover:shadow-[-8px_8px_0_0_rgba(251,163,17,0.5)] dark:hover:shadow-[-8px_8px_0_0_rgba(128,203,196,0.5)]"
+          >
+            <div class="flex items-center mb-3">
+              <i
+                class="fas fa-microchip text-2xl text-kepler-500 dark:text-teal-400 mr-3"
+              ></i>
+              <h3 class="text-lg font-bold text-kepler-500 dark:text-teal-50">
+                TECHNOLOGY
+              </h3>
+            </div>
+            <p class="text-kepler-700 dark:text-white">
+              Digital literacy beyond consumption—learn to create with code
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-6 transform transition-all hover:translate-x-2 hover:-translate-y-2 hover:shadow-[-8px_8px_0_0_rgba(251,163,17,0.5)] dark:hover:shadow-[-8px_8px_0_0_rgba(128,203,196,0.5)]"
+          >
+            <div class="flex items-center mb-3">
+              <i
+                class="fas fa-cogs text-2xl text-kepler-500 dark:text-teal-400 mr-3"
+              ></i>
+              <h3 class="text-lg font-bold text-kepler-500 dark:text-teal-50">
+                ENGINEERING
+              </h3>
+            </div>
+            <p class="text-kepler-700 dark:text-white">
+              Design thinking, problem-solving, and building functional
+              prototypes
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-6 transform transition-all hover:translate-x-2 hover:-translate-y-2 hover:shadow-[-8px_8px_0_0_rgba(251,163,17,0.5)] dark:hover:shadow-[-8px_8px_0_0_rgba(128,203,196,0.5)]"
+          >
+            <div class="flex items-center mb-3">
+              <i
+                class="fas fa-paint-brush text-2xl text-kepler-500 dark:text-teal-400 mr-3"
+              ></i>
+              <h3 class="text-lg font-bold text-kepler-500 dark:text-teal-50">
+                ART+MATH
+              </h3>
+            </div>
+            <p class="text-kepler-700 dark:text-white">
+              Creative expression through digital fabrication and mathematical
+              modeling
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Maker Education Section with FontAwesome Icons -->
+    <section
+      class="py-16 bg-kepler-50 dark:bg-neutral-900 border-y-2 border-kepler-200 dark:border-teal-800"
+    >
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto">
+          <h2
+            class="text-4xl font-bold mb-8 text-kepler-500 dark:text-teal-50 text-center"
+          >
+            WHY MAKER EDUCATION MATTERS
+          </h2>
+
+          <div class="space-y-6">
+            <div class="flex gap-4 items-start">
+              <div
+                class="w-12 h-12 flex-shrink-0 bg-kepler-500 dark:bg-teal-600 flex items-center justify-center text-white"
+              >
+                <i class="fas fa-rocket"></i>
+              </div>
+              <div>
+                <h3
+                  class="text-xl font-bold mb-1 text-kepler-700 dark:text-white"
+                >
+                  Future-Proof Skills
+                </h3>
+                <p class="text-kepler-600 dark:text-teal-100">
+                  The jobs that will define your child's future don't exist yet.
+                  We teach adaptability, not just information.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <div
+                class="w-12 h-12 flex-shrink-0 bg-kepler-500 dark:bg-teal-600 flex items-center justify-center text-white"
+              >
+                <i class="fas fa-hands"></i>
+              </div>
+              <div>
+                <h3
+                  class="text-xl font-bold mb-1 text-kepler-700 dark:text-white"
+                >
+                  Hands-On Learning
+                </h3>
+                <p class="text-kepler-600 dark:text-teal-100">
+                  Theory without practice is like watching someone else eat
+                  dinner. We let kids build, break, and rebuild.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <div
+                class="w-12 h-12 flex-shrink-0 bg-kepler-500 dark:bg-teal-600 flex items-center justify-center text-white"
+              >
+                <i class="fas fa-code"></i>
+              </div>
+              <div>
+                <h3
+                  class="text-xl font-bold mb-1 text-kepler-700 dark:text-white"
+                >
+                  Tech Literacy is the New Literacy
+                </h3>
+                <p class="text-kepler-600 dark:text-teal-100">
+                  In a world built on code, those who can't program will be
+                  programmed. We teach kids to create, not just consume.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <div
+                class="w-12 h-12 flex-shrink-0 bg-kepler-500 dark:bg-teal-600 flex items-center justify-center text-white"
+              >
+                <i class="fas fa-medal"></i>
+              </div>
+              <div>
+                <h3
+                  class="text-xl font-bold mb-1 text-kepler-700 dark:text-white"
+                >
+                  Failing Forward
+                </h3>
+                <p class="text-kepler-600 dark:text-teal-100">
+                  Traditional education penalizes mistakes. We celebrate them as
+                  the most efficient path to mastery.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section id="workshops" class="py-16">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl font-bold mb-12 text-kepler-500 dark:text-teal-50 text-center"
+        >
+          OUR WORKSHOPS
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- 3D Printing Workshop -->
+          <div
+            class="workshop-card bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 transition-all duration-300"
+          >
+            <div
+              class="h-48 bg-kepler-100 dark:bg-teal-800 relative overflow-hidden border-b-2 border-kepler-500 dark:border-teal-500"
+            >
+              <video
+                src="videos/3d-printing.mp4"
+                autoplay
+                muted
+                class="scale-[135%] -mt-[40%]"
+              ></video>
+              <div
+                class="absolute top-4 right-4 bg-kepler-500 dark:bg-teal-500 text-white px-3 py-1 text-sm font-bold"
+              >
+                AGE 8+
+              </div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-kepler-500/80 dark:from-kepler-950/80 to-transparent"
+              >
+                <h3 class="text-xl font-bold text-white">3D PRINTING 101</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <span
+                  class="text-kepler-500 dark:text-teal-50 font-bold text-xl"
+                  >₹2,500</span
+                >
+                <span class="text-kepler-700 dark:text-teal-100 text-sm"
+                  >2.5 HOURS</span
+                >
+              </div>
+              <p class="text-kepler-700 dark:text-teal-100 mb-4">
+                Turn ideas into objects. Learn Text2STL AI modeling, 3D printing
+                fundamentals, and material science basics.
+              </p>
+              <div
+                class="flex items-center justify-between text-kepler-600 dark:text-teal-200 text-sm"
+              >
+                <span class="flex items-center">
+                  <i
+                    class="fas fa-check text-kepler-500 dark:text-teal-50 mr-1"
+                  ></i>
+                  Take-home print
+                </span>
+                <a
+                  href="#contact"
+                  class="text-kepler-500 dark:text-teal-50 hover:underline"
+                >
+                  Reserve <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programming with Blocks -->
+          <div
+            class="workshop-card bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 transition-all duration-300"
+          >
+            <div
+              class="h-48 bg-kepler-100 dark:bg-teal-800 relative overflow-hidden border-b-2 border-kepler-500 dark:border-teal-500"
+            >
+              <img
+                src="images/block-programming.gif"
+                alt="PROGRAMMING WITH BLOCKS"
+              />
+              <div
+                class="absolute top-4 right-4 bg-kepler-500 dark:bg-teal-500 text-white px-3 py-1 text-sm font-bold"
+              >
+                AGE 11+
+              </div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-kepler-500/80 dark:from-kepler-950/80 to-transparent"
+              >
+                <h3 class="text-xl font-bold text-white">
+                  PROGRAMMING WITH BLOCKS
+                </h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <span
+                  class="text-kepler-500 dark:text-teal-50 font-bold text-xl"
+                  >₹2,500</span
+                >
+                <span class="text-kepler-700 dark:text-teal-100 text-sm"
+                  >2.5 HOURS</span
+                >
+              </div>
+              <p class="text-kepler-700 dark:text-teal-100 mb-4">
+                Learn logic, not syntax. Visual block-based programming that
+                teaches fundamental concepts through colorful interactions.
+              </p>
+              <div
+                class="flex items-center justify-between text-kepler-600 dark:text-teal-200 text-sm"
+              >
+                <span class="flex items-center">
+                  <i
+                    class="fas fa-check text-kepler-500 dark:text-teal-50 mr-1"
+                  ></i>
+                  Digital project
+                </span>
+                <a
+                  href="#contact"
+                  class="text-kepler-500 dark:text-teal-50 hover:underline"
+                >
+                  Reserve <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coding & Robotics -->
+          <div
+            class="workshop-card bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 transition-all duration-300"
+          >
+            <div
+              class="h-48 bg-kepler-100 dark:bg-teal-800 relative overflow-hidden border-b-2 border-kepler-500 dark:border-teal-500"
+            >
+              <video
+                src="videos/robotics.mp4"
+                autoplay
+                muted
+                class="scale-[135%] -mt-[25%]"
+              ></video>
+              <div
+                class="absolute top-4 right-4 bg-kepler-500 dark:bg-teal-500 text-white px-3 py-1 text-sm font-bold"
+              >
+                AGE 12+
+              </div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-kepler-500/80 dark:from-kepler-950/80 to-transparent"
+              >
+                <h3 class="text-xl font-bold text-white">CODING & ROBOTICS</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <span
+                  class="text-kepler-500 dark:text-teal-50 font-bold text-xl"
+                  >₹2,500</span
+                >
+                <span class="text-kepler-700 dark:text-teal-100 text-sm"
+                  >2.5 HOURS</span
+                >
+              </div>
+              <p class="text-kepler-700 dark:text-teal-100 mb-4">
+                Enter the world of physical computing. Program simple robots to
+                navigate challenges and respond to their environment.
+              </p>
+              <div
+                class="flex items-center justify-between text-kepler-600 dark:text-teal-200 text-sm"
+              >
+                <span class="flex items-center">
+                  <i
+                    class="fas fa-check text-kepler-500 dark:text-teal-50 mr-1"
+                  ></i>
+                  Robot interaction
+                </span>
+                <a
+                  href="#contact"
+                  class="text-kepler-500 dark:text-teal-50 hover:underline"
+                >
+                  Reserve <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python -->
+          <div
+            class="workshop-card bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 transition-all duration-300"
+          >
+            <div
+              class="h-48 bg-kepler-100 dark:bg-teal-800 relative overflow-hidden border-b-2 border-kepler-500 dark:border-teal-500"
+            >
+              <img src="images/python.gif" alt="PYTHON" class="h-full" />
+              <div
+                class="absolute top-4 right-4 bg-kepler-500 dark:bg-teal-500 text-white px-3 py-1 text-sm font-bold"
+              >
+                AGE 12+
+              </div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-kepler-500/80 dark:from-kepler-950/80 to-transparent"
+              >
+                <h3 class="text-xl font-bold text-white">
+                  LEARN TO SPEAK PYTHON
+                </h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <span
+                  class="text-kepler-500 dark:text-teal-50 font-bold text-xl"
+                  >₹2,500</span
+                >
+                <span class="text-kepler-700 dark:text-teal-100 text-sm"
+                  >2.5 HOURS</span
+                >
+              </div>
+              <p class="text-kepler-700 dark:text-teal-100 mb-4">
+                Python powers everything from AI to data science. Start your
+                journey with this beginner-friendly programming language.
+              </p>
+              <div
+                class="flex items-center justify-between text-kepler-600 dark:text-teal-200 text-sm"
+              >
+                <span class="flex items-center">
+                  <i
+                    class="fas fa-check text-kepler-500 dark:text-teal-50 mr-1"
+                  ></i>
+                  Digital project
+                </span>
+                <a
+                  href="#contact"
+                  class="text-kepler-500 dark:text-teal-50 hover:underline"
+                >
+                  Reserve <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Robotic Hand -->
+          <div
+            class="workshop-card bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 transition-all duration-300"
+          >
+            <div
+              class="h-48 bg-kepler-100 dark:bg-teal-800 relative overflow-hidden border-b-2 border-kepler-500 dark:border-teal-500"
+            >
+              <video
+                src="videos/robotic-hand.mp4"
+                autoplay
+                muted
+                class="scale-[155%] -mt-[5%] -ml-[10%]"
+              ></video>
+              <div
+                class="absolute top-4 right-4 bg-kepler-500 dark:bg-teal-500 text-white px-3 py-1 text-sm font-bold"
+              >
+                AGE 13+
+              </div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-kepler-500/80 dark:from-kepler-950/80 to-transparent"
+              >
+                <h3 class="text-xl font-bold text-white">
+                  MAKE YOUR OWN ROBOTIC HAND
+                </h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <span
+                  class="text-kepler-500 dark:text-teal-50 font-bold text-xl"
+                  >₹12,500</span
+                >
+                <span class="text-kepler-700 dark:text-teal-100 text-sm"
+                  >8 HOURS</span
+                >
+              </div>
+              <p class="text-kepler-700 dark:text-teal-100 mb-4">
+                For serious tinkerers! Build and program a servo-controlled
+                robotic hand that mimics human movement and can be controlled
+                remotely.
+              </p>
+              <div
+                class="flex items-center justify-between text-kepler-600 dark:text-teal-200 text-sm"
+              >
+                <span class="flex items-center">
+                  <i
+                    class="fas fa-check text-kepler-500 dark:text-teal-50 mr-1"
+                  ></i>
+                  Take-home robotic hand
+                </span>
+                <a
+                  href="#contact"
+                  class="text-kepler-500 dark:text-teal-50 hover:underline"
+                >
+                  Reserve <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deep Dives Card -->
+          <div
+            class="workshop-card bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 transition-all duration-300"
+          >
+            <div
+              class="h-48 bg-kepler-100 dark:bg-teal-800 relative overflow-hidden border-b-2 border-kepler-500 dark:border-teal-500"
+            >
+              <img src="images/packs.png" alt="PROGRAM PACKAGES" />
+
+              <div
+                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-kepler-500/80 dark:from-kepler-950/80 to-transparent"
+              >
+                <h3 class="text-xl font-bold text-white">PROGRAM PACKAGES</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="space-y-2 mb-4">
+                <div class="flex justify-between items-center">
+                  <span class="text-kepler-700 dark:text-teal-100 font-bold"
+                    >Multi-day</span
+                  >
+                  <span class="text-kepler-500 dark:text-teal-50 font-bold"
+                    >₹5,000</span
+                  >
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-kepler-700 dark:text-teal-100 font-bold"
+                    >Crash Course</span
+                  >
+                  <span class="text-kepler-500 dark:text-teal-50 font-bold"
+                    >₹8,000</span
+                  >
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-kepler-700 dark:text-teal-100 font-bold"
+                    >Full Package</span
+                  >
+                  <span class="text-kepler-500 dark:text-teal-50 font-bold"
+                    >₹15,000+</span
+                  >
+                </div>
+              </div>
+              <p class="text-kepler-700 dark:text-teal-100 mb-4">
+                From 5-hour deep dives to 6-month comprehensive programs. Ask
+                about our package deals for serious learners.
+              </p>
+              <div
+                class="flex items-center justify-between text-kepler-600 dark:text-teal-200 text-sm"
+              >
+                <span class="flex items-center">
+                  <i
+                    class="fas fa-check text-kepler-500 dark:text-teal-50 mr-1"
+                  ></i>
+                  Custom curriculum
+                </span>
+                <a
+                  href="#contact"
+                  class="text-kepler-500 dark:text-teal-50 hover:underline"
+                >
+                  Inquire <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Information -->
+        <div class="mt-12 max-w-3xl mx-auto text-center">
+          <h3 class="text-2xl font-bold mb-4 text-kepler-500 dark:text-teal-50">
+            COMPREHENSIVE PACKAGES
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div
+              class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-4"
+            >
+              <h4
+                class="font-bold text-lg mb-2 text-kepler-700 dark:text-white"
+              >
+                MONTHLY
+              </h4>
+              <div
+                class="text-2xl font-bold text-kepler-500 dark:text-teal-50 mb-1"
+              >
+                ₹15,000
+              </div>
+              <p class="text-sm text-kepler-600 dark:text-teal-200 mb-2">
+                4 classes (10 hours)
+              </p>
+              <div
+                class="h-px w-full bg-kepler-200 dark:bg-teal-700 my-2"
+              ></div>
+              <a
+                href="#contact"
+                class="text-kepler-600 dark:text-teal-200 text-sm hover:text-kepler-500 dark:hover:text-teal-400"
+              >
+                Learn more <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+
+            <div
+              class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-4 transform scale-105 relative"
+            >
+              <div
+                class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-kepler-500 dark:bg-teal-500 text-white text-xs px-3 py-1"
+              >
+                POPULAR
+              </div>
+              <h4
+                class="font-bold text-lg mb-2 text-kepler-700 dark:text-white"
+              >
+                BI-MONTHLY
+              </h4>
+              <div
+                class="text-2xl font-bold text-kepler-500 dark:text-teal-50 mb-1"
+              >
+                ₹25,000
+              </div>
+              <p class="text-sm text-kepler-600 dark:text-teal-200 mb-2">
+                8 classes (20 hours)
+              </p>
+              <div
+                class="h-px w-full bg-kepler-200 dark:bg-teal-700 my-2"
+              ></div>
+              <a
+                href="#contact"
+                class="text-kepler-600 dark:text-teal-200 text-sm hover:text-kepler-500 dark:hover:text-teal-400"
+              >
+                Learn more <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+
+            <div
+              class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-4"
+            >
+              <h4
+                class="font-bold text-lg mb-2 text-kepler-700 dark:text-white"
+              >
+                SEMESTER
+              </h4>
+              <div
+                class="text-2xl font-bold text-kepler-500 dark:text-teal-50 mb-1"
+              >
+                ₹50,000
+              </div>
+              <p class="text-sm text-kepler-600 dark:text-teal-200 mb-2">
+                16 classes (40 hours)
+              </p>
+              <div
+                class="h-px w-full bg-kepler-200 dark:bg-teal-700 my-2"
+              ></div>
+              <a
+                href="#contact"
+                class="text-kepler-600 dark:text-teal-200 text-sm hover:text-kepler-500 dark:hover:text-teal-400"
+              >
+                Learn more <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Educational Outings -->
+          <div
+            class="mt-8 bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-6 text-left"
+          >
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 bg-kepler-500 dark:bg-teal-500 flex-shrink-0 flex items-center justify-center"
+              >
+                <i class="fas fa-route text-white text-xl"></i>
+              </div>
+              <div class="ml-4">
+                <h4
+                  class="text-xl font-bold mb-2 text-kepler-700 dark:text-white"
+                >
+                  EDUCATIONAL OUTINGS
+                </h4>
+                <p class="text-kepler-600 dark:text-teal-200 mb-2">
+                  Personalized guided tours to science museums, innovation
+                  centers, and maker spaces. Expand learning beyond the
+                  classroom.
+                </p>
+                <div
+                  class="flex items-center text-kepler-600 dark:text-teal-200"
+                >
+                  <span class="font-bold text-kepler-500 dark:text-teal-50 mr-4"
+                    >₹3,000 per child</span
+                  >
+                  <a
+                    href="#contact"
+                    class="text-kepler-500 dark:text-teal-50 hover:underline text-sm"
+                  >
+                    Inquire <i class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section
+      id="instructors"
+      class="py-16 bg-kepler-50 dark:bg-neutral-900 border-y-2 border-kepler-200 dark:border-teal-800"
+    >
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl font-bold mb-12 text-kepler-500 dark:text-teal-50 text-center"
+        >
+          MEET YOUR INSTRUCTORS
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <!-- Amit -->
+          <div
+            class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-6 md:p-8"
+          >
+            <div class="">
+              <div class="">
+                <img src="images/amit.png" width="200" />
+              </div>
+              <div>
+                <h3
+                  class="text-2xl font-bold mb-1 mt-4 text-kepler-700 dark:text-white"
+                >
+                  AMIT
+                </h3>
+                <p class="font-bold text-kepler-500 dark:text-teal-50 mb-4">
+                  Circuit Python & LED Enthusiast
+                </p>
+                <p class="text-kepler-600 dark:text-teal-200 mb-4">
+                  Amit discovered the computer at 9, and he's been online since!
+                  He loves Circuit Python, LEDs of all kinds, and the internet.
+                  When not teaching, he's building interactive installations.
+                </p>
+                <div class="flex gap-3">
+                  <a
+                    href="mailto:amit@absurd.industries"
+                    class="text-kepler-500 dark:text-teal-50 hover:text-kepler-600 dark:hover:text-teal-300 transition-colors"
+                  >
+                  </a>
+                  <a
+                    href="tel:+919892836471"
+                    class="text-kepler-500 dark:text-teal-50 hover:text-kepler-600 dark:hover:text-teal-300 transition-colors"
+                  >
+                    <i class="fas fa-phone text-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kailash -->
+          <div
+            class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-6 md:p-8"
+          >
+            <div class="">
+              <div class="">
+                <img src="images/kailash.png" width="200" />
+              </div>
+              <div class="">
+                <h3
+                  class="text-2xl font-bold mb-1 mt-4 text-kepler-700 dark:text-white"
+                >
+                  KAILASH
+                </h3>
+                <p class="font-bold text-kepler-500 dark:text-teal-50 mb-4">
+                  Physics & Material Science Expert
+                </p>
+                <p class="text-kepler-600 dark:text-teal-200 mb-4">
+                  Has been a maker and teacher for a long time. He likes Power
+                  Electronics, Material Science and Physics. His specialties
+                  include robotics engineering and 3D printing.
+                </p>
+                <div class="flex gap-3">
+                  <a
+                    href="mailto:kailash91@gmail.com"
+                    class="text-kepler-500 dark:text-teal-50 hover:text-kepler-600 dark:hover:text-teal-300 transition-colors"
+                  >
+                    <i class="fas fa-envelope text-lg"></i>
+                  </a>
+                  <a
+                    href="tel:+919886192024"
+                    class="text-kepler-500 dark:text-teal-50 hover:text-kepler-600 dark:hover:text-teal-300 transition-colors"
+                  >
+                    <i class="fas fa-phone text-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section - Maker Edition -->
+    <section id="contact" class="py-16 bg-white dark:bg-neutral-950">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl font-bold mb-6 text-kepler-500 dark:text-teal-50 text-center"
+        >
+          GET IN TOUCH
+        </h2>
+
+        <div class="max-w-3xl mx-auto text-center">
+          <p class="text-kepler-700 dark:text-teal-200 text-lg mb-8">
+            Questions about our workshops? Ready to register? We're just a
+            message away!
+          </p>
+          <a
+            href="https://wa.me/+919892836471"
+            class="mt-5 font-mono bg-kepler-500 dark:bg-teal-500 px-8 py-4 text-white font-bold transform transition-all hover:bg-kepler-600 dark:hover:bg-teal-600 w-full md:w-auto"
+          >
+            CONTACT VIA WHATSAPP
+            <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+
+          <p class="text-kepler-400 dark:text-teal-300 mt-10 text-sm">
+            We typically respond within minutes during business hours
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer with updated contact info -->
+    <footer class="bg-kepler-950 dark:bg-neutral-950 pt-6 text-white">
+      <div
+        class="border-t pt-4 pb-8 border-kepler-800 dark:border-teal-900 container mx-auto px-4 flex justify-between items-center"
+      >
+        <div class="text-center">
+          <p class="text-kepler-300 dark:text-teal-300">
+            <a href="https://absurd.industries">absurd.industries</a> x
+            <a href="https://ampere.works">ampere.works</a>
+          </p>
+        </div>
+        <div>
+          <div class="items-center mt-4">
+            <i
+              class="fas fa-phone text-kepler-500 dark:text-teal-500 w-5 text-center mr-2"
+            ></i>
+            <a
+              href="https://wa.me/+919892836471"
+              class="text-kepler-200 dark:text-teal-200 hover:text-kepler-500 dark:hover:text-teal-400"
+            >
+              +91 98928 36471
+            </a>
+          </div>
+          <div class="items-center">
+            <i
+              class="fas fa-envelope text-kepler-500 dark:text-teal-500 w-5 text-center mr-2"
+            ></i>
+            <a
+              href="mailto:frontier@absurd.industries"
+              class="text-kepler-200 dark:text-teal-200 hover:text-kepler-500 dark:hover:text-teal-400"
+            >
+              frontier@absurd.industries
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Theme toggle
+      const themeToggle = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+
+      // Check for saved theme preference or use device preference
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+
+      if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+        html.classList.add("dark");
+      }
+
+      // Toggle theme when button is clicked
+      themeToggle.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.setItem(
+          "theme",
+          html.classList.contains("dark") ? "dark" : "light"
+        );
+      });
+
+      // Add stars to the background for subtle animation
+      function createStars() {
+        const starsContainer = document.createElement("div");
+        starsContainer.classList.add(
+          "fixed",
+          "inset-0",
+          "pointer-events-none",
+          "z-0"
+        );
+        document.body.appendChild(starsContainer);
+
+        for (let i = 0; i < 100; i++) {
+          const star = document.createElement("div");
+          star.classList.add(
+            "absolute",
+            "w-px",
+            "h-px",
+            "bg-white",
+            "opacity-30",
+            "animate-pulse"
+          );
+
+          const size = Math.random() * 2;
+          star.style.width = `${size}px`;
+          star.style.height = `${size}px`;
+
+          star.style.left = `${Math.random() * 100}%`;
+          star.style.top = `${Math.random() * 100}%`;
+
+          // Add flicker animation with random duration
+          star.style.animationDuration = `${3 + Math.random() * 7}s`;
+
+          starsContainer.appendChild(star);
+        }
+      }
+
+      createStars();
+    </script>
+  </body>
+</html>
