@@ -297,7 +297,7 @@
     class="bg-white dark:bg-teal-950 text-teal-950 dark:text-white transition-colors duration-300"
   >
     <!-- Theme Toggle Button (Fixed) -->
-    <div class="fixed top-5 right-5 z-50">
+    <div class="absolute top-5 right-5 z-50">
       <button
         id="theme-toggle"
         class="w-12 h-12 rounded-full bg-kepler-500 dark:bg-teal-500 text-white flex items-center justify-center shadow-lg"
@@ -890,7 +890,7 @@
           </h3>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div
-              class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-4"
+              class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-4 mt-2"
             >
               <h4
                 class="font-bold text-lg mb-2 text-kepler-700 dark:text-white"
@@ -917,13 +917,8 @@
             </div>
 
             <div
-              class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-4 transform scale-105 relative"
+              class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-4 transform md:scale-105 relative mt-2"
             >
-              <div
-                class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-kepler-500 dark:bg-teal-500 text-white text-xs px-3 py-1"
-              >
-                POPULAR
-              </div>
               <h4
                 class="font-bold text-lg mb-2 text-kepler-700 dark:text-white"
               >
@@ -949,7 +944,7 @@
             </div>
 
             <div
-              class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-4"
+              class="bg-white dark:bg-neutral-900 border-2 border-kepler-500 dark:border-teal-500 p-4 mt-2"
             >
               <h4
                 class="font-bold text-lg mb-2 text-kepler-700 dark:text-white"
@@ -1057,9 +1052,10 @@
                     href="mailto:amit@absurd.industries"
                     class="text-kepler-500 dark:text-teal-50 hover:text-kepler-600 dark:hover:text-teal-300 transition-colors"
                   >
+                    <i class="fas fa-envelope text-lg"></i>
                   </a>
                   <a
-                    href="tel:+919892836471"
+                    href="https://wa.me/:+919892836471"
                     class="text-kepler-500 dark:text-teal-50 hover:text-kepler-600 dark:hover:text-teal-300 transition-colors"
                   >
                     <i class="fas fa-phone text-lg"></i>
@@ -1099,7 +1095,7 @@
                     <i class="fas fa-envelope text-lg"></i>
                   </a>
                   <a
-                    href="tel:+919886192024"
+                    href="https://wa.me/+919886192024"
                     class="text-kepler-500 dark:text-teal-50 hover:text-kepler-600 dark:hover:text-teal-300 transition-colors"
                   >
                     <i class="fas fa-phone text-lg"></i>
@@ -1142,9 +1138,9 @@
     </section>
 
     <!-- Footer with updated contact info -->
-    <footer class="bg-kepler-950 dark:bg-neutral-950 pt-6 text-white">
+    <footer class="bg-kepler-950 dark:bg-neutral-950 pt-6 text-white text-lg">
       <div
-        class="border-t pt-4 pb-8 border-kepler-800 dark:border-teal-900 container mx-auto px-4 flex justify-between items-center"
+        class="pt-4 pb-8 container mx-auto px-4 flex flex-col md:flex-row justify-between items-center"
       >
         <div class="text-center">
           <p class="text-kepler-300 dark:text-teal-300">
@@ -1152,10 +1148,10 @@
             <a href="https://ampere.works">ampere.works</a>
           </p>
         </div>
-        <div>
+        <div class="md:text-end text-center">
           <div class="items-center mt-4">
             <i
-              class="fas fa-phone text-kepler-500 dark:text-teal-500 w-5 text-center mr-2"
+              class="fas fa-phone text-kepler-500 dark:text-teal-500 w-5 text-center"
             ></i>
             <a
               href="https://wa.me/+919892836471"
@@ -1164,9 +1160,9 @@
               +91 98928 36471
             </a>
           </div>
-          <div class="items-center">
+          <div class="items-center mt-2">
             <i
-              class="fas fa-envelope text-kepler-500 dark:text-teal-500 w-5 text-center mr-2"
+              class="fas fa-envelope text-kepler-500 dark:text-teal-500 w-5 text-center"
             ></i>
             <a
               href="mailto:frontier@absurd.industries"
